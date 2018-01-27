@@ -32,7 +32,7 @@ def Val(S, X):
 def Set(S, X):
 	S['_D'] = Val(S, X)
 
-def Exe(I, S, i):
+def Out(I, S, i):
 	V = []
 	M = Mem(S)
 	D = Dat(S)
@@ -49,12 +49,12 @@ def Exe(I, S, i):
 	O = Op(S)[i]
 	return I(O, V)
 
-def Out(I, S, X):
+def Exe(I, S, X):
 	Set(S, X)
 	O = Op(S)
 	
 	Y = []
 	for i in range(len(O)):
-		y = Exe(I, S, i)
+		y = Out(I, S, i)
 		Y.append(y)
 	return Y
