@@ -1,7 +1,7 @@
 # Intelligent Logical Framing
-
-### An approach to logical cognition and rationality in artificial intelligence
 ***
+### An approach to logical cognition and rationality in artificial intelligence
+
 __1. Philosophical Overview__
 
 The ability to think logically is what distinguishes man from all other animals. Plato believed that we all are  born with something called a “rational soul”, or some essential property of all human beings that gave us the unique ability to think in logical and abstract ways. The result of possessing a rational soul, according to him, is the ability access some 'higher plane' of reality, which consists of so-called “forms”, or idealized representations of things by which our physical world and everything in it can be described, in terms of how well the physical objects conform to the ideal representations given by the forms. The duty of man is then to sculpt our physical world to better fit these forms, and thus move ourselves toward some "perfect" idealized state and effectively progressing humanity.
@@ -46,4 +46,4 @@ Templates are learned through experience and observation of objects. Sets of obs
 
 Template development follows a certain logic to determine how the functions ought to be composed. By following a set of “development rules”, a template is constructed by analyzing a set of grouped objects and extracting the attributes that describe them. The first development rule indicates the process by objects are grouped together. It states that the likelihood of two objects, A and B, belonging to the same group corresponds to the ratio between the number of equivalent properties between A and B and the number of shared properties between A and B, and the ratio between the number of shared properties between A and B and the average total number of properties of A and B.
 
-Note: a "shared property" between two objects is a property contained by both objects while not necessarily equaling the same value, while an "equivalent property" is a shared property that is equal to the same value in both objects.
+_Note: a "shared property" between two objects is a property contained by both objects while not necessarily equaling the same value, while an "equivalent property" is a shared property that is equal to the same value in both objects._
