@@ -8,14 +8,10 @@ def resemblance(A, B):
 		return len(Matching(A, B)) / len(Shared(A, B))
 	return 0
 
-
-
 def correspondence(A, B):
 # Determine the ratio of equality to inequality with respect to the properties of two given objects 
 	size = (Size(A) + Size(B)) / 2
 	return resemblance(A, B) * len(Shared(A, B)) / size
-
-
 
 def connect(G):
 # Determine the topology for a network to represent the similarity between objects in a group
@@ -34,8 +30,6 @@ def connect(G):
 					C.append(Y)
 
 	return LabeledNetwork(G,L, [None,C])
-
-
 
 def cluster(N):
 # Determine the set of unordered pairs to represent the greatest correspondence between objects in a group 
@@ -59,10 +53,7 @@ def cluster(N):
 				n = dst(L[m])
 			else: n = src(L[m])
 			Y.append([i, n])
-
 	return Y
-
-
 
 def combine(G):
 # Determine the set of objects resulting from the combination of two paired objects  
@@ -82,8 +73,6 @@ def combine(G):
 	
 	return [P, O]
 
-
-
 def create(G):
 # Determine the non-reduntant set of combined objects
 	P,O = combine(G)
@@ -98,8 +87,6 @@ def create(G):
 						del O[j]
 						break
 	return P,O
-
-
 
 def revise(X):
 # Determine the frequency distribution over the domain of each property 
@@ -117,6 +104,3 @@ def revise(X):
 		Y[k] = Keys(y), Values(y)
 	
 	return Y
-
-
-# print(revise({'x':[1, 1], 'y':[1, 2, 1, 1, 2, 3]}))

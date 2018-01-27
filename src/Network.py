@@ -10,8 +10,6 @@ def LabeledNetwork(nodes, links, labels):
 	network['labels'] = labels
 	return network
 
-
-
 def Nodes(network):
 	return network['nodes']
 
