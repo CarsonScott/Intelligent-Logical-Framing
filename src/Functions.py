@@ -12,3 +12,6 @@ def less_than(a, b):
 
 def add(a, b):
 	return a + b
+
+def non_negative(x):
+	return x >= 0

@@ -1,4 +1,3 @@
-from Graph import *
 from random import randrange as rr
 
 def Walker(template, position, ground):
